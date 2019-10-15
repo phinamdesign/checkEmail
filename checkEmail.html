@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Email</title>
+</head>
+<body>
+<script>
+    let inEmail = prompt("Nhập email");
+    let regEx = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    if (regEx.test(inEmail)){
+        alert("Email hợp lệ");
+    }else {
+        alert("Email không hợp lệ");
+    }
+</script>
+</body>
+</html>
