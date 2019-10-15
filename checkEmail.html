@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Validate Email</title>
+    <title>Validate Account</title>
 </head>
 <body>
 <script>
-    let inEmail = prompt("Nhập email");
-    let regEx = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+    let inEmail = prompt("Nhập Account");
+    let regEx = /^[_a-z0-9]{6,}$/;
     if (regEx.test(inEmail)){
-        alert("Email hợp lệ");
+        alert("Account hợp lệ");
     }else {
-        alert("Email không hợp lệ");
+        alert("Account không hợp lệ");
     }
 </script>
 </body>
